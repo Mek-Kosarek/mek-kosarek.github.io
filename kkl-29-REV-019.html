@@ -20,6 +20,17 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
+
+// Footnotes and Cross-references
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">19:4 </span><span class=\"xt\"><span class=\"reflink\"><a href=\"kkl-29-REV-004.html#v4\">Lag Taogha 4:4-8</a></span></span></div>",
+    "X-1": "<div class=\"footnote-p\"><span class=\"xo\">19:10 </span><span class=\"xt\"><span class=\"reflink\"><a href=\"kkl-25-1JN-004.html#v1\">1 Yohanes 4:1-3</a></span></span></div>",
+    "X-2": "<div class=\"footnote-p\"><span class=\"xo\">19:15 </span><span class=\"xt\"><span class=\"reflink\"><a href=\"kkl-29-REV-001.html#v16\">Lag Taogha 1:16</a></span></span></div>",
+    "X-3": "<div class=\"footnote-p\"><span class=\"xo\">19:15 </span><span class=\"xt\">Sepna 2:9</span></div>"
+};
+
+initFootnotes(crossrefs);
+
 });
 
 // Chapters
@@ -50,64 +61,75 @@ var baseRef  = "kkl-29-REV-";
 <div id="content">
 
 
-<div class="s"><div id="s1">“Nuni Allah omeklamsut!” aro kiplamonga</div></div><a id="v1"></a>
+<div class="s"><div id="s1">“Nuni Allah omeklamsut!” aro kiplameka</div></div><a id="v1"></a>
 <div class="m">
 <div class="c-drop">19</div> <span class="v">1-2</span><span class="vsp">&nbsp;</span>Neneko uro yabioba, ka'elamnoag agha yubu lilim nimi maiknori haum alamloba, yubu angkongkoa lelamlo saog uro imag agha yubu omekto lelamongdi,</div>
 <div class="q top-spacing">“Nuni Allah omeklamsut!</div>
-<div class="q">Nimiri malia uropne sembe eldi sikne porogne agha tam karepto pelengelamla.</div>
+<div class="q">Nimiri malia uropne sembe eldi sikne porogne agha</div>
+<div class="q2">tam karepto pelengelamla.</div>
 <div class="q">Ane sembe lag phoro lelamapti,</div>
-<div class="q">Nuni Allah nimi taulba uhiropne wamlari,</div>
-<div class="q">el mikip wamlari nia mangkina saelbamla!</div>
+<div class="q2">Nuni Allah nimi taulba uhiropne wamlari,</div>
+<div class="q2">el mikip wamlari, nia mangkina saelbamla!</div>
 <div class="q">El paliag uropne kiplamap!</div>
-<div class="q">Salik-malik walep tangtop kel neneko sembe Allahri tam karepto pelengkal.</div>
-<div class="q">Kel nenekori nengabo maikno kiliro salik-malik walep tangkamloa saog ulamongeag agha</div>
-<div class="q">mog so'oag nimi maikno kiliro ulamsioba, Allah wail ibarelamong.</div>
-<div class="q">Kel nenekori Allahri awe torop nimi maikno eneng tiniro olamsioa sembe</div>
-<div class="q">Nuni Allahri eldi arukna usog lumbaldi, tam ikinne kel nenekoag pelengkipla,”</div>
+<div class="q">Salik-malik walep tangtop kel neneko sembe</div>
+<div class="q2">Allahri tam karepto pelengkal.</div>
+<div class="q">Kel nenekori nengabo maikno kiliro</div>
+<div class="q2">salik-malik walep tangkamloa saog ulamongeag agha</div>
+<div class="q">mog so'oag nimi maikno kiliro ulamsioba,</div>
+<div class="q2">Allah wail ibarelamong.</div>
+<div class="q">Kel nenekori Allahri awe torop nimi maikno</div>
+<div class="q2">eneng tiniro olamsioa sembe</div>
+<div class="q">Nuni Allahri eldi arukna usog lumbaldi,</div>
+<div class="q2">tam ikinne kel nenekoag pelengkipla,”</div>
 <div class="p">alamong.<span id="bookmarks1-2"></span></div><span id="bookmarks1-2"></span><a id="v3"></a>
 <div class="p"><span class="v">3</span><span class="vsp">&nbsp;</span>Wene alamongne neneko ka'ebanoba, nen nimi maikno tanekori yubu lelamongdi,</div>
 <div class="q top-spacing">“Nuni Allah omeklamsut!</div>
 <div class="q">Ina yabirop kel Babel neneko loba nembaoba,</div>
-<div class="q">auk mhong eneko kuklamle paghabog kuklamlul,”</div>
-<div class="p">aro Allah omeklamonga ka'ebano.<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Wene alamongba ka'ebanoba, saelba uhiropne puka urobag tibom agha, nimi nubu nang yubu epto wenehirop nang tom tarabare tanekori yabu sanukto u amupto pulingkiong. Lebe aroba kamag uropne tombare Allah whingag ua uropne tanekori babe yabu sanukto u amupto pulingkina, Allah omeklamong. Allah saelba uhiropne puka urobag pulamoba, sindi Allah omeklamong yubuna, “Sikne agha lebang. Nuni Allah omeklamsut!” aro omeklamonga ka'ebahino.<span id="bookmarks4"></span></div>
+<div class="q2">auk mhong eneko kuklamle paghabog kuklamlul,”</div>
+<div class="p">aro Allah omeklamonga ka'ebano.<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Wene alamongba ka'ebanoba, saelba uhiropne puka urobag tibom agha, nimi nubunang yubu epto wenehirop nang tom tarabare tanekori yabu sanukto u amupto pulingkiong. Lebe aroba kamag uropne tombare Allah whingag ua uropne tanekori babe yabu sanukto u amupto pulingkina, Allah omeklamong.<span class="footnote selectable" id="X-0"><sup>a</sup></span> Allah saelba uhiropne puka urobag pulamoba, sindi Allah omeklamong yubuna,</div>
+<div class="q top-spacing">“Sikne agha lebang. Nuni Allah omeklamsut!”</div>
+<div class="p">aro omeklamonga ka'ebahino.<span id="bookmarks4"></span></div>
 
 <div class="s"><div id="s2">Pham Domba Meri elkel toropne sembe sani yoroba</div></div><span id="bookmarks4"></span><a id="v5"></a>
 <div class="p"><span class="v">5</span><span class="vsp">&nbsp;</span>Wene alamongba, saelba uhiropne puka urobag tanekoag agha yubu lilim lelamoa ka'ebanongena,</div>
 <div class="q top-spacing">“Allah elmabo a'un ni Allah arukna wamlomne,</div>
-<div class="q">a'undi wanaag agha Allah kiplamlomne,</div>
+<div class="q2">a'undi wanaag agha Allah kiplamlomne,</div>
 <div class="q">nimi ni ologneap nubungeap a'undi Allah omeklamsut!”</div>
 <div class="p">aro yubu lilim lelamoa ka'ebano.<span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
-<div class="p"><span class="v">6</span><span class="vsp">&nbsp;</span>Wene aro yubu lilim neneko lelamoba, nen ka'elamnoag agha yubu lilim lelamongena, nimi maikno wamlori yubu lelamloba, yubu angkongkoa lelamloa saog uro lelamongne ka'ebano. Ka'ebanongena, niksiag-niksiag agha limang talaglamnari, mag mhun maiknoro yangkalamnari, yubu lelamloa saog uro lelamoa ka'ebano. Nari ka'elamnoba, sindi yubu lelamong nena,</div>
-<div class="q top-spacing">“Nia mangkina mikip uro Saelba Uhiropne Allah ponekori wene salero yubu sia lelamla.</div>
+<div class="p"><span class="v">6</span><span class="vsp">&nbsp;</span>Wene aro yubu lilim neneko lelamoba, nen ka'elamnoag agha yubu lilim lelamongena, nimi maikno wamlori, yubu lelamloba, yubu angkongkoa lelamloa saog uro lelamongne ka'ebano. Ka'ebanongena, niksiag-niksiag agha limang talaglamnari, mag mhun maiknoro yangkalamnari, yubu lelamloa saog uro lelamoa ka'ebano. Nari ka'elamnoba, sindi yubu lelamong nena,</div>
+<div class="q top-spacing">“Nia mangkina mikip uro Saelba Uhiropne Allah ponekori</div>
+<div class="q2">wene salero yubu sia lelamla.</div>
 <div class="q">Ane sembe Nuni Allah omeklamsut!<span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
-<div class="q-v"><span class="v">7</span><span class="vsp">&nbsp;</span>Pham Domba Me ponekori, ‘Kelabo toroanun,’ senen kel eneko weroba wamlaba, sin top tanuarang.</div>
-<div class="q">Ane sembe nu awi uro wameberi, Allah paliag uropne kipto sepna seplamukap.<span id="bookmarks7"></span></div><span id="bookmarks7"></span><a id="v8"></a>
-<div class="q-v"><span class="v">8</span><span class="vsp">&nbsp;</span>Pham Domba Me ponekori, ‘Toroanun,’ senen kel eneko sembe,</div>
-<div class="q">wangkanep ag wet purum winne agha wetnerop ag walinge,</div>
-<div class="q">kororop ag sembenga orogne kel enekoag taroba,</div>
-<div class="q">ag nene wangkamlari, weroba wamla,”</div>
+<div class="q-v"><span class="v">7</span><span class="vsp">&nbsp;</span>Pham Domba Me ponekori, ‘Toroanun,’ senen kel eneko</div>
+<div class="q2">weroba wamlaba, sin top tanuarang.</div>
+<div class="q">Ane sembe nu awi uro wameberi,</div>
+<div class="q2">Allah paliag uropne kipto sepna seplamukap.<span id="bookmarks7"></span></div><span id="bookmarks7"></span><a id="v8"></a>
+<div class="q-v"><span class="v">8</span><span class="vsp">&nbsp;</span>Pham Domba Meri, ‘Toroanun,’ senen kel eneko sembe,</div>
+<div class="q2">wangkanep ag wet purum winne agha</div>
+<div class="q2">wetnerop ag walinge kororop ag sembenga orogne</div>
+<div class="q">kel enekoag taroba, ag nene wangkamlari, weroba wamla,”</div>
 <div class="p">aro lelamong.</div>
 <div class="p">Wene aro lelamonga ka'ebanori, el tanonge, “Ag wet purum winne agha wetnerop ag walinge,” aro lelamongne kekneba sembe lebong. “Wangkanep ag walinge wangkamla,” seong aghana, Allah eldamneri wepsirop mabori porog sirika ulamangne sembe lebong.<span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
-<div class="p"><span class="v">9</span><span class="vsp">&nbsp;</span>Allah arukna malaikat ponekori nanag yubu lelamori, “Mome toplulamne ane.</div>
-<div class="q top-spacing">‘Pham Domba Me ponekori kelabo tomnepne sembe sani yobaukang. “Sani yolamangag yalulam,” aro yobol ahile nimi taneko sin wali wana awi uro wamukang,’</div>
-<div class="p">aro mome toplulam,” seo.</div>
+<div class="p"><span class="v">9</span><span class="vsp">&nbsp;</span>Allah arukna malaikat ponekori nanag yubu lelamori, “Mome toplulamne ane. ‘Pham Domba Me ponekori kelabo tomnepne sembe sani yobaukang. “Sani yolamangag yalulam,” aro yobol ahile nimi taneko sin wana awi uro wali wamukang,’ aro mome toplulam,” seo.</div>
 <div class="p">Wene seori, nen ma'aro tipto yubu lebongena, “Nene Allahri yubu sikne ambatken,” aro ambatneo.<span id="bookmarks9"></span></div><span id="bookmarks9"></span><a id="v10"></a>
-<div class="p"><span class="v">10</span><span class="vsp">&nbsp;</span>Wene seoba, nari yabu sanukto u amupto malaikat yan tamag pulingkina, “Kipnun,” aro ulamno aghana, eldi lelamori, “Undo unuaheng kom! Ot Allah aghabog omeklamlulam! Na babe an wamlamne saog uro Allah arukna wamnam. Ankabo Yesusti sikne lag nenero ambatsiog yubu saelba ul pirop nimiri babe anap nanapti nika uro Allah sembe awe tolamap,” aro ambatneo. Malaikat ponekori nanag undo ambatneongena, tam nene sembe. Yesusti yubu ambarelamsiogne nenena, Allah Yame Walingeri Yesusti wanaag pibogne sunsunum uro sik uro ambatsiog. Nimi etneri sik uro Allah Yame Walinge pere agha lerop tanena, Yesusti yubu sunsunum uro Allah yubu silimu tipto ambatsirop.<span id="bookmarks10"></span></div>
+<div class="p"><span class="v">10</span><span class="vsp">&nbsp;</span>Wene seoba, nari yabu sanukto u amupto malaikat yan tamag pulingkina, “Kipnun,” aro ulamno aghana, eldi lelamori, “Undo unuaheng kom! Ot Allah aghabog omeklamlulam! Na babe an wamlamne saog uro Allah arukna wamnam. Ankabo Yesusti sikne lag nenero ambatsiog yubu saelba ul pirop nimiri babe anap nanapti nika uro Allah sembe awe tolamap,” aro ambatneo. Malaikat ponekori nanag undo ambatneongena, tam nene sembe. Yesusti yubu ambarelamsiogne nenena, Allah Yame Walingeri Yesusti wanaag pibogne sunsunum uro sik uro ambatsiog. Nimi etneri sik uro Allah Yame Walinge pere agha lerop tanena, Yesusti yubu sunsunum uro Allah yubu silimu tipto ambatsirop.<span class="footnote selectable" id="X-1"><sup>b</sup></span><span id="bookmarks10"></span></div>
 
 <div class="s"><div id="s3">Pham kuda solomne alibag pukamonge poneko sembe ambatsiogha</div></div><span id="bookmarks10"></span><a id="v11"></a>
-<div class="p"><span class="v">11</span><span class="vsp">&nbsp;</span>Nari imag tiwalengelamnoag agha ina kuptoba nhon imag wamoba, pham kuda solom pham nhon wamoa tiwalengkano. Pham kuda alibag aneko pukamonge poneko si engerop nena, Sikne Sol Walinge aro engerop. Eldi tam karepnange babe, mal talamnange babe, sunsunum uro porogne agha ul pirop.<span id="bookmarks11"></span> <a id="v12"></a><span class="v">12</span><span class="vsp">&nbsp;</span>Eldi haingna, auk pog saog uro warea urop. Eldi usoghagna, yubu sia leropne kwiria usoghag elel-molel aropne maikno eleka urop. El nongag aneko mome top tangka urop aghana, si mome top tangka urop si enekona, nimi nenne ekon. El agha mome top tangka urop si eneko eldamne agha el wamla.<span id="bookmarks12"></span> <a id="v13"></a><span class="v">13</span><span class="vsp">&nbsp;</span>Eldi ag wangaro pelengka urop ag anekona enengag phibi agha wangka urop. Enengag phibi agha eneka uropne poneko el sina, “Allah Yubu,” aro engerop.<span id="bookmarks13"></span> <a id="v14"></a><span class="v">14</span><span class="vsp">&nbsp;</span>Undo unuamoba ililamnoba, el umag nimi maikno yin salerop nang kong-kongne pham kuda solomne alibag pukamongdi, imag wamong. Sin nongag wet purum winne agha wetnerop ag walinge, kororop ag sembenga orogne enekamongdi, elag neleplamong.<span id="bookmarks14"></span> <a id="v15"></a><span class="v">15</span><span class="vsp">&nbsp;</span>Eldi silomag agha lanalamoa imnongena, nimi ohirop karog yo sirikne lambamonge imno. Mog so'o tala-tala urop nimiri el aisa nenerop nang wamikne taneko eldi silomag agha karog lanaropne nenekori opsilul. Aisanang mog so'o tala-tala wamang nimi taneko oro luknubahileri, eldi besi agha sunurop kame salero nimi kasmi agha saelbamsilul. Eldi aisanang luknubahilul nena, nimiri anggur wana ingisapto lolterop mag lanalamloa saog uro, Allah nia mangkina mikip uro saleropne ponekori wana yo sirik senenneag agha el, “Allahri Yubu,” aro si engeropne ponekori el aisa nenerop nang ingisapnuahil.<span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span>Eldi wangaro pelengka urop agap, eldi yan ilap abenekoag mome torop nena, el si engeropne mome torop. Eldi si mome torop nena undo.</div>
+<div class="p"><span class="v">11</span><span class="vsp">&nbsp;</span>Nari imag tiwalengelamnoag agha ina kuptoba nhon imag wamoba, pham kuda solom pham nhon wamoa tiwalengkano. Pham kuda alibag aneko pukamonge poneko si engerop nena, “Sikne Sol Walinge,” aro engerop. Eldi tam karepnange babe, mal talamnange babe, sunsunum uro porogne agha ul pirop.<span id="bookmarks11"></span> <a id="v12"></a><span class="v">12</span><span class="vsp">&nbsp;</span>Eldi haingna, auk pog saog uro warea urop. Eldi usoghagna, yubu sia leropne kwiria usoghag elel-molel aropne maikno eleka urop. El nongag aneko mome top tangka urop aghana, si mome top tangka urop si enekona, nimi nenne ekon. El agha mome top tangka urop si eneko eldamne agha el wamla.<span id="bookmarks12"></span> <a id="v13"></a><span class="v">13</span><span class="vsp">&nbsp;</span>Eldi ag wangaro pelengka urop ag anekona enengag phibi agha wangka urop. Enengag phibi agha eneka uropne poneko el sina, “Allah Yubu,” aro engerop.<span id="bookmarks13"></span> <a id="v14"></a><span class="v">14</span><span class="vsp">&nbsp;</span>Undo unuamoba ililamnoba, el umag nimi maikno yin salerop nang kong-kongne pham kuda solomne alibag pukamongdi, imag wamong. Sin nongag wet purum winne agha wetnerop ag walinge, kororop ag sembenga orogne enekamongdi, elag neleplamong.<span id="bookmarks14"></span> <a id="v15"></a><span class="v">15</span><span class="vsp">&nbsp;</span>Eldi silomag agha lanalamoa imnongena, nimi ohirop karog yo sirikne lambamonge imno. Mog so'o tala-tala urop nimiri el aisa nenerop nang wamikne taneko eldi silomag agha karog lanaropne nenekori opsilul.<span class="footnote selectable" id="X-2"><sup>c</sup></span> Aisanang mog so'o tala-tala wamang nimi taneko oro luknubahileri, eldi besi agha sunurop kame salero nimi kasmi agha saelbamsilul.<span class="footnote selectable" id="X-3"><sup>d</sup></span> Eldi aisanang luknubahilul nena, nimiri anggur wana ingisapto lolterop mag lanalamloa saog uro, Allah nia mangkina mikip uro saleropne ponekori wana yo sirik senenneag agha el, “Allah Yubu,” aro si engeropne ponekori el aisa nenerop nang ingisapnuahil.<span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span>Eldi wangaro pelengka urop agap, eldi yan ilap abenekoag mome torop nena, el si engeropne mome torop. Eldi si mome torop nena undo.</div>
 <div class="q top-spacing">“Yubu sia lerop nang sembe Yubu Sia Lenne paliagne.</div>
 <div class="q">Mog so'oag nimi saelba uhirop nang Saelba Uhiropne nubunge,”</div>
 <div class="p">aro mome torop.<span id="bookmarks16"></span></div><span id="bookmarks16"></span><a id="v17"></a>
 <div class="p"><span class="v">17</span><span class="vsp">&nbsp;</span>Undo uro yabioba, tiwalengelamnoag agha Allah arukna malaikat heng nusamag sekamoa tiwalengkano. Sekamori winang im toman ni palamong winangag yubu mikip uro lelamori,</div>
-<div class="q top-spacing">“Allahri sani nubunge weamlo saog uro weamlaba, longoro telahut!<span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
-<div class="q2-vv"><span class="v">18</span><span class="vsp">&nbsp;</span>Yahutti nimi yubu sia lerop nangdi sopap, yin salerop nang sikini yabori sopap, palisong nimiri sopap, pham kudari sopap, pham kuda alibag puka urop nimiri sopap</div>
-<div class="q3">a'un winang im toman yabalamlomneri tel alulom.</div>
-<div class="q">Nimi ni wamangne, nimi arukna urop nimi babe, mo sektop nimi babe, nimi nubungeap, ologneap tebaiikpa,</div>
-<div class="q2">sindi sop telahut!”</div>
+<div class="q top-spacing">“Allahri sani nubunge weamlo saog uro weamlaba,</div>
+<div class="q2">longoro telahut!<span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
+<div class="q-vv"><span class="v">18</span><span class="vsp">&nbsp;</span>Yahutti nimi yubu sia lerop nangdi sopap, yin salerop nang sikini yabori sopap, palisong nimiri sopap, pham kudari sopap, pham kuda alibag puka urop nimiri sopap</div>
+<div class="q2">a'un winang im toman yabalamlomneri tel alulom.</div>
+<div class="q">Nimi ni wamangne, nimi arukna urop nimi babe,</div>
+<div class="q2">mo sektop nimi babe, nimi nubungeap, ologneap</div>
+<div class="q2">tebaiikpa, sindi sop telahut!”</div>
 <div class="p">alamoba ka'ebano.<span id="bookmarks18"></span></div><span id="bookmarks18"></span><a id="v19"></a>
-<div class="p"><span class="v">19</span><span class="vsp">&nbsp;</span>Wene seoba, nari kemelamnoag agha lebe aroba yonge Allah san tiliptopne samenag imnonge nen sap imno. Lebe aroba nenekoap, nimi ni mog so'oag wamang nimi sembe yubu sia lerop nangap, “Mal tabaukap” aro sindi yin salerop nang poloro wimbahiong. Yin salerop nang wimbahiongdi, “Imagne pham kuda solomne alibag puka uropne ponekoap, ilipsabo yin salerop nangap luknubahukap,” aro longolaong.<span id="bookmarks19"></span></div><span id="bookmarks19"></span><a id="v20"></a>
-<div class="p"><span class="v">20</span><span class="vsp">&nbsp;</span>Longolaong aghana, Allah san tiliptop lebe aroba nenekoap, eldi yubu silimu tipto orolenange ambatsiropne nenekoap, sin abeneko haing sae kaupto saelbahio. Lebe arobari yubu silimu tipto orolenange ambatsiropne nenekona samenag, “Mog so'oag nimi Allah san tiliptop lebe aroba nenekoag sip taukang,” aro mema mikibari uanep kekneba ulamori, mog so'oag nimi maikno haing kunulamsio. Haing kunulamsio nimi tanekori, “Allah san tiliptop lebe aroba nenekoringe taukap,” aro kekneba sindam nimi nongag tobong. Kekneba sindam nimi nongag tolamongdi, lebe arobari yame sunumna sunuroba omeklamong. Undo unulamong aghana, Allah san tiliptop lebe aroba nenekoap, eldi yubu silimu tipto orolenange ambatsiropne nenekoap, sin haing sae kaupto saelbahiori, auk nubungeag tobogahio. Auk nubunge mag longorop saog urop auk enekoag song mali auk singina iba ua urobag sin abeneko anam teban koma auk nubungeag tobogahio.<span id="bookmarks20"></span></div><span id="bookmarks20"></span><a id="v21"></a>
+<div class="p"><span class="v">19</span><span class="vsp">&nbsp;</span>Wene seoba, nari kemelamnoag agha lebe aroba yonge Allah san tiliptopne samenag imnonge nen sap imno. Lebe aroba nenekoap, nimi ni mog so'oag wamang nimi sembe yubu sia lerop nangap, “Mal tabaukap,” aro sindi yin salerop nang poloro wimbahiong. Yin salerop nang wimbahiongdi, “Imagne pham kuda solomne alibag puka uropne ponekoap, ilipsabo yin salerop nangap luknubahukap,” aro longolaong.<span id="bookmarks19"></span></div><span id="bookmarks19"></span><a id="v20"></a>
+<div class="p"><span class="v">20</span><span class="vsp">&nbsp;</span>Longolaong aghana, Allah san tiliptop lebe aroba nenekoap, eldi yubu silimu tipto orolenange ambatsiropne nenekoap, sin abeneko haing sae kaupto saelbahio. Lebe arobari yubu silimu tipto orolenange ambatsiropne nenekona samenag, “Mog so'oag nimi Allah san tiliptop lebe aroba nenekoag sip taukang,” aro mema mikibari uanep kekneba ulamori, mog so'oag nimi maikno haing kunulamsio. Haing kunulamsio nimi tanekori, “Allah san tiliptop lebe aroba nenekoringe taukap,” aro kekneba sindam nimi nongag tobong. Kekneba sindam nimi nongag tolamongdi, lebe arobari yame sunumna sunuroba omeklamong. Undo unulamong aghana, Allah san tiliptop lebe aroba nenekoap, eldi yubu silimu tipto orolenange ambatsiropne nenekoap, sin haing sae kaupto saelbahiori, auk nubungeag tobogahio. Auk nubunge mag nubu uro longorop mag saog urop auk enekoag song mali auk singina iba ua urobag sin abeneko anam teban koma auk nubungeag tobogahio.<span id="bookmarks20"></span></div><span id="bookmarks20"></span><a id="v21"></a>
 <div class="p"><span class="v">21</span><span class="vsp">&nbsp;</span>Auk nubungeag tobogahiori, pham kuda solomne alibag puka uropne ponekori el silomag agha la'inirop karog saelbom agha Allah san tiliptop lebe aroba neleptop nimi ni ya'ag opsio. Ya'ag opsioba, ni winang im toman yabirop winang tanekori yingkina nimi teptoba taneko mon og uro telamonga imno.<span id="bookmarks21"></span></div>
 </div>
 </body>

@@ -8,6 +8,31 @@
     src: url('../fonts/CharisSILCompact-B.ttf')  format('truetype');
     font-weight: bold; font-style: normal; 
 }
+@font-face {
+    font-family: font2;
+    src: url('../fonts/Andika-R.ttf')  format('truetype');
+    font-weight: normal; font-style: normal; 
+}
+@font-face {
+    font-family: font3;
+    src: url('../fonts/Alkalami-Regular.ttf')  format('truetype');
+    font-weight: normal; font-style: normal; 
+}
+@font-face {
+    font-family: font4;
+    src: url('../fonts/ArchivoBlack-Regular.ttf')  format('truetype');
+    font-weight: normal; font-style: normal; 
+}
+@font-face {
+    font-family: font5;
+    src: url('../fonts/RobotoSlab-Regular.ttf')  format('truetype');
+    font-weight: normal; font-style: normal; 
+}
+@font-face {
+    font-family: font5;
+    src: url('../fonts/RobotoSlab-Bold.ttf')  format('truetype');
+    font-weight: bold; font-style: normal; 
+}
 
 body {
     font-family: font1;
