@@ -5,7 +5,7 @@ var books = [
   { name: "Markus", ref: "kkl-04-MRK-001.html" },
   { name: "Lukas", ref: "kkl-05-LUK-001.html" },
   { name: "Yohanes", ref: "kkl-06-JHN-001.html" },
-  { name: "Pogsiognang", ref: "kkl-07-ACT-001.html" },
+  { name: "Pogsiog Nang", ref: "kkl-07-ACT-001.html" },
   { name: "Roma", ref: "kkl-08-ROM-001.html" },
   { name: "1 Korintus", ref: "kkl-09-1CO-001.html" },
   { name: "2 Korintus", ref: "kkl-10-2CO-001.html" },
